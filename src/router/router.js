@@ -45,19 +45,19 @@ const router=new VueRouter({
     
     ]
 })
- router.beforeEach((to,form,next)=>{
+//  router.beforeEach((to,form,next)=>{
    
-     if(to.path==="/pop") return next();
+//      if(to.path==="/pop") return next();
      
-     var tu=window.sessionStorage.getItem("totke")
-     if(!tu) return next("/pop")
-     next()
+//      var tu=window.sessionStorage.getItem("totke")
+//      if(!tu) return next("/pop")
+//      next()
 
- })
-        const originalPush = VueRouter.prototype.push
-        VueRouter.prototype.push = function push(location, onResolve, onReject) {
-            if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
-            return originalPush.call(this, location).catch(err => err)
-        }
+//  })
+//   const originalPush = VueRouter.prototype.push
+//   VueRouter.prototype.push = function push(location, onResolve, onReject) {
+//       if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
+//       return originalPush.call(this, location).catch(err => err)
+//   }
 
 export default router

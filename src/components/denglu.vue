@@ -59,6 +59,7 @@ export default {
      },
      denglu(){
         console.log()
+         this.$router.push("/qq")
        this.$refs.ruleForm.validate(valid => {
              console.log(valid)
              var parmes={

@@ -182,6 +182,14 @@ export function tianjiavvv(id){
     )
   }
   
-
-
-
+/*//////////////////////////////////////////////////////// */
+export function dingdany(id){
+  return requer.get(
+    `/cgi-bin/gettoken`,{params:id}
+  )
+}
+export function send(id){
+  return requer.post(
+    `/cgi-bin/message/send?access_token=${id}`
+  )
+}
