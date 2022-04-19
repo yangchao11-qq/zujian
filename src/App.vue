@@ -26,7 +26,7 @@
      <div v-if="lop">
        <weiixn></weiixn>
      </div>
-
+  <div>saddddddddddddddddddddddsadd dfsssssssssssss</div>
 
   </div>
 </template>
